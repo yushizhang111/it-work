@@ -46,12 +46,12 @@ $(document).ready(function(){
 
 	/*skills*/
 
-	const front_end_skills = ["React.js", "Redux", "Redux-Saga", "Vue.js", "Angular", "Html", "Pug(Jade)", "CSS", "Scss", "Sass", "Less", "JavaScript", "jQuery", "TypeScript", "C#"]
-	const back_end_skills = ["Node.js", "mongoosejs", "MongoDB", "RESTful API", "expressjs", "SQL", "PHP", "Mongo Compass", "Postman", "Swagger UI"]
+	const front_end_skills = ["React.js", "Redux", "Redux-Saga", "Vue.js", "Angular", "Html", "Pug(Jade)", "CSS", "Scss", "Sass", "Less", "JavaScript", "jQuery", "TypeScript", "Bootstrap", "Materialize", "ElementUI", "semantic-ui", "pro.ant.design"]
+	const back_end_skills = ["Node.js", "mongoosejs", "MongoDB", ".Net", "RESTful API", "expressjs", "SQL", "PHP", "Mongo Compass", "Postman", "Swagger UI"]
 	const framework = ["KeystoneJS", "Laravel"]
 	const machine_learning =[ "text mining", "simple NLP methods (trigger terms)", "Spyder", "Jupyter notebook", "Matlab", "Weka", "TensorFlow"]
-	const language = ["JAVA", "Python"]
-	const ui = ["Bootstrap", "Materialize", "ElementUI", "semantic-ui", "pro.ant.design", "Figma", "Sketch", "Zeplin", "Photoshop", "Adobe Illustration"]
+	const language = ["C#", "JAVA", "Python"]
+	const ui = [ "Figma", "Sketch", "Zeplin", "Photoshop", "Adobe Illustration"]
 	const seo = ["seo"]
 	const cloud_platform = ["heroku", "AWS S3", "MongoDB Atlas"]
 	const project_management = ["Agile", "Scrum", "Git", "Github", "Jira", "Bitbucket"]
