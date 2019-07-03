@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yushi Zhang's CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/stylesheets/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                  
+            <div class="yushi-nav-bar collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="yushi-nav-bar-nav navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#introduction"><button onclick="pageChange('#introduction')" type="button" class="yushi-nav-bar__button nav-link  btn btn-outline-primary home-link"><strong>Home</strong></button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skill-tool"><button onclick="pageChange('#skill-tool')" type="button" class="nav-link yushi-nav-bar__button btn btn-outline-primary resume-link"><strong>Skills & Tools</strong></button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio"><button onclick="pageChange('#portfolio')" type="button" class="nav-link yushi-nav-bar__button btn btn-outline-primary portfolio-link"><strong>Portfolio</strong></button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+    
+    <div class="pages">
+        <section class="page-view" id="introduction">
+            <div class="page-content">
+                <div class="main-card">
+                    <div class="card-content">
+                        <div class="front card-page">
+                            <div class="main-card__avatar">
+                                <img src="public/img/avatar.jpeg" />
+                            </div>
+                            <div class="main-card__title">
+                                <h1><strong>Yushi Zhang</strong></h1>
+                                <h2><strong>Full Stack Developer</strong></h2>
+                            </div>
+                            <div class="main-card__description">
+                                <p>
+                                    <strong>Full Stack Developer in Jiangren Academy</strong>
+                                </p>
+                                <p>
+                                    <strong>Master of Information Technology in University of Queensland </strong>
+                                </p>
+                                <p>
+                                    <strong>MSc by Research in Integrative Neuroscience in University of Edinburgh </strong>
+                                </p>
+                                <p>
+                                    <strong>Video Editor</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="back card-page">
+                            <h2>Links</h2>
+                            
+                            <li>
+                                <a href="https://www.linkedin.com/in/yushi-zhang111/" target="_blank">My LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="/public/docs/Web_Developer_YushiZhang.pdf" download>Download my resume</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/yushizhang111" download>Github</a>
+                            </li>
+                            <div class="contact">
+                                <img class="contact-item" src="public/img/svg/phone.svg" />
+                                <p class="contact-item">0451575825</p>
+                                <img class="contact-item" src="public/img/svg/email.svg" />
+                                <p class="contact-item">yushizhang.work@gmail.com</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        </section>
+        <section class="page-view" id="skill-tool">
+            <div class="page-content">
+                <div class="skill-card">
+                    <h3>Front End</h3>
+                    <ul class="front-end-skills tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Back End</h3>
+                    <ul class="back-end-skills tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Framework</h3>
+                    <ul class="framework tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <ul class="machine-learning tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Language</h3>
+                    <ul class="language tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <ul class="ui tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>SEO</h3>
+                    <ul class="seo tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud Platform</h3>
+                    <ul class="cloud-platform tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Project Manegement</h3>
+                    <ul class="project-management tags">  
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Other</h3>
+                    <ul class="other tags">  
+                    </ul>
+                </div>
+                
+                
+                
+                <button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+            </div>
+        </section>
+        <section class="page-view" id="portfolio">
+            <div class="project-card">
+                <h2><strong>IT Projects</strong></h2>
+                <div class="card_block">
+                </div>
+                <div class="card_block">
+                </div>
+                <div class="it-projects">
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
+    <script src="/public/js/background.js"></script>
+    <script src="/public/js/main.js"></script>
+</body>
+</html>

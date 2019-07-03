@@ -1,0 +1,70 @@
+{
+    "it_projects" : [
+		{ 
+			"id":1,
+			"title" : "JR Academy",
+			"skills":["React.js","Redux", "Node.js", "Pug(Jade)", "JavaScript", "mongoosejs", "Scss", "KeystoneJs", "Bootstrap", "jQuery", "RESTful API","Jira", "bitbucket"],
+			"short_description" : "https://jiangren.com.au",
+			"description":""
+		},
+		{ 
+			"id":2,
+			"title" : "JR Dashboard",
+			"skills":["React.js", "Redux-Saga", "Node.js", "JavaScript", "mongoosejs", "Less", "KeystoneJs", "Bootstrap", "pro.ant.design", "RESTful API"],
+			"short_description" : "https://learn.jiangren.com.au",
+			"description":""
+		},
+		{ 
+			"id":3,
+			"title" : "JR Talent: Responsive Design",
+			"skills":["Bootstrap"],
+			"short_description" : "http://jrtalent.com.au/",
+			"description":""
+		},
+		{ 
+			"id":4,
+			"title" : "JR People--Leave management",
+			"skills":["React.js", "Redux-Saga", "Node.js", "JavaScript", "mongoosejs", "Less", "KeystoneJs", "Bootstrap", "pro.ant.design", "RESTful API", "AWS S3"],
+			"short_description" : "http://jr-eleave.s3-website-ap-southeast-2.amazonaws.com",
+			"description":""
+		},
+		{ 
+			"id":5,
+			"title" : "Razzledazzle",
+			"skills":["Wix"],
+			"short_description" : "https://www.razzledazzle.company/",
+			"description":""
+		},
+		{ 
+			"id":6,
+			"title" : "Queensland Government Climate Change",
+			"skills":["Html", "CSS", "Javascript", "Google Map API", "Leaflet", "D3.js", "pdfmake"],
+			"short_description" : "https://paddle-qld-climate.herokuapp.com/",
+			"description":""
+		},
+		{ 
+			"id":7,
+			"title" : "Aboriginal words learning system",
+			"skills":["Html", "CSS", "Javascript", "Speech-to-Text API", "swiper.js"],
+			"short_description" : "https://dream-time.herokuapp.com/",
+			"description":""
+		},
+		{ 
+			"id":8,
+			"title" : "Checking pathology results in an emergency department: An IT solution to support patient safety and increase efficiency",
+			"skills":["Text Mining","Python","Spyder", "Jupyter Notebook"],
+			"short_description" : "",
+			"description":""
+		}
+	],
+	"other_projects" : [
+		{ 
+			"id":"01",
+			"title" : "Performance of bilingual in cognition task",
+			"skills":["Attention Network Task", "Elevator counting task", "Number Stroop", "Raven’s Advanced Progressive Matrices"],
+			"short_description" : "",
+			"description":""
+		}
+		
+	]
+}

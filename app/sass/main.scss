@@ -1,0 +1,362 @@
+/*********************
+*breakpoints
+***********************/
+$XS:    420px;
+$S:     480px;
+$M:     769px;
+$ML:	940px;
+$L:     1200px;
+$maxL:    $L + 1px;
+/*********************
+color
+***********************/
+$theme-color:#37474F;
+
+// media queries
+@mixin MQ($canvas) {
+	@if $canvas==XS {
+		@media only screen and (max-width: $XS) {
+			@content;
+		}
+	}
+	@if $canvas==S {
+		@media only screen and (max-width: $S) {
+			@content;
+		}
+	}
+	@else if $canvas==M {
+		@media only screen and (max-width: $M) {
+			@content;
+		}
+	}
+	@else if $canvas==ML {
+		@media only screen and (max-width: $ML) {
+			@content;
+		}
+	}
+	@else if $canvas==L {
+		@media only screen and (max-width: $L) {
+			@content;
+		}
+	}
+	@else if $canvas==maxL {
+		@media only screen and (min-width: $maxL) {
+			@content;
+		}
+	}
+}
+body{
+	background: #8c8c8c;
+	width: auto;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: -2;
+	svg{
+		position:fixed;
+		top:0px;
+		height:100%;
+		z-index: -1;
+	}
+	
+}
+
+header{
+	position:fixed;
+	z-index:5;
+	width:100%;
+	top:0;
+}
+
+.yushi-nav-bar{
+    float:right;
+    margin-right:20%;
+    color:$theme-color;
+    .yushi-nav-bar-nav{
+        position:relative;
+        top:10%;
+        display: inline-flex;
+        li{
+            list-style: none;
+            margin:10px;
+            .yushi-nav-bar__button{
+                color:#37474F;
+				border:5px dashed $theme-color;
+				padding:10px 20px;
+                &:hover{
+					border:5px solid white;
+					border-radius: 50px;
+                    color:white;
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+    @include MQ(ML){
+        .yushi-nav-bar-nav{
+            margin:auto;
+            left:55%;
+            li{
+                list-style: none;
+                margin:auto;
+                margin-bottom:10px;
+                .yushi-nav-bar__button{
+                    color:#37474F;
+                    border:0px;
+                    font-size:1.5em;
+                    padding:10px;
+                    &:hover{
+                        border:5px solid white;
+                        color:white;
+                        background-color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    @include MQ(S){
+        .yushi-nav-bar-nav{
+            margin:auto;
+            left:45%;
+        }
+    }
+}
+.pages{
+	height:100%;
+	#introduction{
+		background:rgba(0, 0, 0, 0);
+		height:auto;
+		.main-card{
+			position: relative;
+			width:70%;
+			height: auto;
+			left:15%;
+			top:200px;
+			margin-bottom:200px;
+			&:hover .card-content {
+				transform: rotateY( 180deg ) ;
+				transition: transform 0.5s;
+			  }
+			.card-content{
+				background:rgba(225, 225, 225, 0.25);
+				box-shadow: 1px 4px 3px 3px rgba(0,0,0,0.5);
+				border-radius: 100px;
+				text-align: center;
+				transition: transform 1s;
+  				transform-style: preserve-3d;
+				.front{
+					backface-visibility: hidden;
+					.main-card__avatar{
+						position:relative;
+						border-radius: 50%;
+						overflow: hidden;
+						width: 200px;
+						height: 200px;
+						bottom:80px;
+						margin:0 auto;
+						border:6px dashed $theme-color;
+						img{
+							width: 200px;
+							position: relative;
+							left: 0px;
+							bottom: 20px;
+						}
+					}
+					@include MQ(L){
+						.main-card__description{
+							margin:10px;
+						}
+					}
+					.main-card__title{
+						color:$theme-color;
+					}
+					@include MQ(S){
+						.main-card__title{
+							padding-top:55px;
+						}
+					}
+					.main-card__description{
+						padding-bottom:60px;
+						padding-top:60px;
+						color:white;
+						font-size:1.2em;
+					}
+				}
+				.back{
+					position:absolute;
+					top:30%;
+					right:0;
+					left:0;
+					backface-visibility: hidden;
+					transform: rotateY( 180deg );
+					list-style: none;
+					font-size:1.5em;
+					color:$theme-color;
+					li{
+						margin:30px;
+						a:link{
+							color:$theme-color;
+						}
+						a:hover{
+							color:white;
+						}
+						a:visited{
+							color:black;
+							&:hover{
+								color:white;
+							}
+						}
+					}
+					.contact{
+						display: inline-flex;
+						flex-flow: row wrap;
+						align-items: center;
+						img{
+							width:30px;
+							margin:10px;
+						}
+					}
+				}
+			}
+		}
+		@include MQ(M){
+			.main-card{
+				width:90%;
+				left:5%;
+			}
+		}
+	}
+
+	#skill-tool{
+		
+		.skill-card{
+			top:200px;
+			position:relative;
+			background:rgba(225, 225, 225, 0.25);
+			width:80%;
+			margin:100px auto;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			border-radius: 50px;
+			padding:30px;
+			text-align: center;
+			transition: top 0.3s;
+			&:hover{
+				box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+				top:190px;
+			}
+			.tags {
+				width: 100%;
+				display: inline-flex;
+				flex-flow: row wrap;
+				justify-content: space-evenly;
+				padding-left:0px;
+				list-style: none;
+				.skill-tag {
+					text-align: center;
+					font-size: 1.2em;
+					padding: 5px;
+					width: auto;
+					background-color:$theme-color;
+					color:white;
+					border-radius: 50px;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					margin:20px;
+					padding:5px 30px;
+					opacity:0.8;
+				}
+				@include MQ(ML){
+					.skill-tag{
+						font-size: 0.7em;
+					}
+				}
+			}
+		}
+		
+		#top-button{
+			display: none; 
+			position: fixed; 
+			bottom: 20px; 
+			right: 30px; 
+			z-index: 99; 
+			border: none; 
+			outline: none; 
+			background-color: $theme-color;
+			color: white; 
+			cursor: pointer; 
+			padding: 15px; 
+			border-radius: 10px; 
+			font-size: 18px; 
+		}
+		@include MQ(XS){
+			#top-button{
+				font-size: 11px;
+				right:10px;
+			}
+		}
+	}
+	#portfolio{
+		
+		.project-card{
+			top:200px;
+			position:relative;
+			text-align: center;
+			.card_block{
+				border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+				padding-bottom: 5px;
+				margin: 5px auto;
+				width:80%;
+			}
+			.it-projects,.other-projects{
+				width: 90%;
+				display: inline-flex;
+				flex-flow: row wrap;
+				padding-left:0px;
+				list-style: none;
+				.project_card{
+					width:80%;
+					background:rgba(225, 225, 225, 0.25);
+					margin:30px auto;
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 50px;
+					padding:20px;
+					text-align: center;
+					.project_skills{
+						width: 80%;
+						display: inline-flex;
+						flex-flow: row wrap;
+						justify-content: space-evenly;
+						padding-left:0px;
+						list-style: none;
+						.project_skill{
+							text-align: center;
+							font-size: 1.2em;
+							padding: 5px;
+							width: auto;
+							background-color:$theme-color;
+							color:white;
+							border-radius: 50px;
+							box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+							margin:20px;
+							padding:5px 30px;
+							opacity:0.8;
+						}
+						@include MQ(ML){
+							.project_skill{
+								font-size: 0.7em;
+							}
+						}
+					}
+				}
+			}
+		}
+		.education-card{
+			text-align: center;
+			.card_block{
+				border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+				padding-bottom: 5px;
+				margin: 5px auto;
+				width:80%;
+			}
+		}
+	}
+}
